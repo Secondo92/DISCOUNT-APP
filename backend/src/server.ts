@@ -7,7 +7,7 @@ dotenv.config();
 
 const app = express();
 app.use(cors());
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 app.get("/api/stores", async (req, res) => {
     try {
@@ -76,5 +76,5 @@ app.get("/api/discounts/:storeId", async (req, res) => {
 
 
 app.listen(PORT, () => {
-    console.log(`Backend running at http://localhost:${PORT}`);
+  console.log("Backend running at port " + PORT);
 });
