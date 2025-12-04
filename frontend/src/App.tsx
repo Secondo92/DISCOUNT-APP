@@ -1,6 +1,5 @@
 import './index.css'
 import { useState, useEffect } from 'react'
-import StoreSelector from './components/StoreSelector'
 import { fetchDiscounts } from './api/fetchDiscount'
 import { fetchStores } from './api/fetchStores'
 import { type SallingStore } from './types/SallingStore'
